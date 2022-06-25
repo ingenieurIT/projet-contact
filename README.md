@@ -6,6 +6,15 @@ Pour executer l'application, placez vous dans le dossier du projet et executer l
 une fois que les packages seront installe, placez vous dans le dossier du projet en tapant la commande 'cd Contacts'
 puis executer la commande 'python manage.py runserver'
 
+ou alors executez ces commandes:
+pip install virtualenv
+virtualenv env
+env\scripts\activate
+pip install django
+pip install -r requirement.txt
+cd Contatcs
+python manage.py runserver
+
 vous ouvrez votre navigateur et vous saisisez l'adresse '127.0.0.1:8000/accueil'
 
 intercafe d'accueil
