@@ -1,0 +1,15 @@
+{% extends 'accueil.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <h2>Details</h2>
+        <hr>
+        <h5>Noms:{{contact.nom}}</h5>
+        <h5>Prenoms: {{contact.prenom}}</h5>
+        <h5>Numero: {{contact.numero}}</h5>
+        <h5>Adresse Mail: {{contact.mail}}</h5>
+        <p>Cree le: {{contact.date_creation}}</h5>
+    </div>
+        
+{% endblock content %}

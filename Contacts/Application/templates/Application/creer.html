@@ -1,0 +1,23 @@
+{% extends 'accueil.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="container card" style="width: 50%; height: 400px;">
+        
+        <form action="" method="post">
+            {% csrf_token %}
+
+            <div class="col-md-6";">
+                {{form.nom|as_crispy_field}}
+                {{form.prenom|as_crispy_field}}
+                {{form.numero|as_crispy_field}}
+                {{form.mail|as_crispy_field}}
+                <input class="btn btn-primary" type="submit" value="Enregistrer" />
+            </div>
+        
+        </form>
+        
+    </div>
+
+{% endblock content %}
